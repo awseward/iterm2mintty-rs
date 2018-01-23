@@ -44,6 +44,8 @@ pub struct Theme {
     bold_cyan: String,
     bold_white: String,
     background_colour: String,
+    foreground_colour: String,
+    cursor_colour: String,
 }
 
 impl From<iterm2::Theme> for Theme {
@@ -66,6 +68,8 @@ impl From<iterm2::Theme> for Theme {
             bold_cyan: format!("{}", Color::from(iterm2.bright_cyan)),
             bold_white: format!("{}", Color::from(iterm2.bright_white)),
             background_colour: format!("{}", Color::from(iterm2.background)),
+            foreground_colour: format!("{}", Color::from(iterm2.foreground)),
+            cursor_colour: format!("{}", Color::from(iterm2.cursor_text)),
         }
     }
 }
