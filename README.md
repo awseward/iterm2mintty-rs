@@ -1,3 +1,4 @@
+[![Crates.io: iterm2mintty](http://meritbadge.herokuapp.com/iterm2mintty)](https://crates.io/crates/iterm2mintty)
 ```
 Converts iterm2 themes to mintty format
 
