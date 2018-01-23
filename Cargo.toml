@@ -1,7 +1,12 @@
 [package]
 name = "iterm2mintty"
 version = "0.1.0"
-authors = ["Brian"]
+authors = ["bobcats"]
+description = "Tool that converts iterm2 themes to minttyrc themes"
+homepage = "https://github.com/bobcats/iterm2mintty-rs"
+repository = "https://github.com/bobcats/iterm2mintty-rs"
+readme = "README.md"
+license = "MIT"
 
 [dependencies]
 clap = "2.29.2"
