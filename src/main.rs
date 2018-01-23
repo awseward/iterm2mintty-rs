@@ -11,9 +11,9 @@ use clap::{App, Arg};
 mod iterm2;
 mod mintty;
 
-const FILE_NOT_FOUND_ERROR_MSG: &'static str = "iterm2theme could not be opened.";
+const FILE_NOT_FOUND_ERROR_MSG: &str = "iterm2theme could not be opened.";
 
-const DESERIALIZE_ERROR_MSG: &'static str = r#"""
+const DESERIALIZE_ERROR_MSG: &str = r#"""
     iterm2theme could not be parsed.
     
     If you think you have a valid iterm2theme, please post an 
