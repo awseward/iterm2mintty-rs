@@ -1,6 +1,6 @@
 [package]
 name = "iterm2mintty"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["bobcats"]
 description = "Tool that converts iterm2 themes to minttyrc themes"
 homepage = "https://github.com/bobcats/iterm2mintty-rs"
@@ -14,3 +14,4 @@ plist = "0.2.4"
 serde = "1.0"
 serde_derive = "1.0"
 serde_ini = "0.1.3"
+serde_yaml = "0.8.8"
