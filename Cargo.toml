@@ -1,6 +1,6 @@
 [package]
 name = "iterm2mintty"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["bobcats"]
 description = "Tool that converts iterm2 themes to minttyrc themes"
 homepage = "https://github.com/bobcats/iterm2mintty-rs"

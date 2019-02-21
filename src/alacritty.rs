@@ -20,7 +20,7 @@ impl From<iterm2::Color> for Color {
 
 impl fmt::Display for Color {
   fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-    write!(f, "0x{:02x}{:02x}{:02x}", self.red, self.green, self.blue)
+    write!(f, "#{:02x}{:02x}{:02x}", self.red, self.green, self.blue)
   }
 }
 
@@ -29,6 +29,7 @@ pub struct Theme {
   primary: Primary,
   normal: Normal,
   bright: Bright,
+  cursor: Cursor,
 }
 
 #[derive(Debug, Serialize)]
@@ -61,6 +62,12 @@ pub struct Bright {
   white: String,
 }
 
+#[derive(Debug, Serialize)]
+pub struct Cursor {
+  cursor: String,
+  text: String,
+}
+
 impl From<iterm2::Theme> for Theme {
   fn from(iterm2: iterm2::Theme) -> Self {
     Theme {
@@ -87,6 +94,10 @@ impl From<iterm2::Theme> for Theme {
         magenta: format!("{}", Color::from(iterm2.bright_magenta)),
         cyan: format!("{}", Color::from(iterm2.bright_cyan)),
         white: format!("{}", Color::from(iterm2.bright_white)),
+      },
+      cursor: Cursor {
+        cursor: format!("{}", Color::from(iterm2.cursor)),
+        text: format!("{}", Color::from(iterm2.cursor_text)),
       }
     }
   }

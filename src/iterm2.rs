@@ -26,4 +26,5 @@ pub struct Theme {
     #[serde(rename = "Background Color")] pub background: Color,
     #[serde(rename = "Foreground Color")] pub foreground: Color,
     #[serde(rename = "Cursor Text Color")] pub cursor_text: Color,
+    #[serde(rename = "Cursor Color")] pub cursor: Color,
 }

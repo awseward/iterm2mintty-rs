@@ -24,7 +24,7 @@ const DESERIALIZE_ERROR_MSG: &str = r#"""
 
 fn main() {
     let matches = App::new("iterm2mintty")
-        .version("0.1.2")
+        .version("0.2.0")
         .about("Converts iterm2 themes to mintty format")
         .author("bobcats")
         .arg(Arg::with_name("iterm2theme").index(1).required(true))
